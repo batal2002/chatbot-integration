@@ -1,0 +1,12 @@
+.AssistantsHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .AssistantsHeader {
+        gap: 8px;
+    }
+}

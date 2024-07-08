@@ -1,0 +1,31 @@
+.TeamHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .TeamHeader {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .button {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        gap: 8px;
+    }
+}

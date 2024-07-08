@@ -1,0 +1,29 @@
+.Logo {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+
+    span {
+        opacity: 1;
+        transition: opacity var(--transition-main);
+    }
+}
+
+.image {
+    flex: 0 0 auto;
+    width: 30px;
+    height: 34px;
+    color: var(--accent-main);
+}
+
+.collapsed {
+    span {
+        opacity: 0;
+    }
+}
+
+.title {
+    white-space: nowrap;
+}

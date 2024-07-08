@@ -1,0 +1,10 @@
+.TextPage {
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .TextPage {
+        flex-direction: column-reverse;
+    }
+}

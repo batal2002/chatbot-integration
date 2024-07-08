@@ -1,0 +1,62 @@
+.DropdownCheckbox {
+    position: relative;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 100%;
+    margin-top: 8px;
+    padding: 4px;
+    box-shadow: 0 2px 14px 0 #0000000f;
+    border: 1px solid var(--accent-ligth);
+    border-radius: 12px;
+    background-color: var(--white);
+}
+
+.m {
+    min-width: 209px;
+}
+
+.auto {
+    width: 100%;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.item {
+    width: 100%;
+    padding: 8px 16px;
+    white-space: nowrap;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    width: 100%;
+    border: 1px solid var(--accent-ligth);
+    border-radius: 12px;
+    color: var(--gray);
+}
+
+.open {
+    .select {
+        color: var(--dark);
+    }
+
+    .icon {
+        transform: rotate(180deg);
+    }
+}

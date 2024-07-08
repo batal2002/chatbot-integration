@@ -1,0 +1,85 @@
+.Input {
+    &.auto {
+        width: 100%;
+    }
+
+    &.s {
+        width: 287px;
+    }
+
+    &.m {
+        width: 320px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 11px 19px;
+    border: 1px solid var(--accent-ligth);
+    border-radius: 12px;
+
+    .addonLeft,
+    .addonRight {
+        flex: 0 0 auto;
+        width: 20px;
+        height: 20px;
+        color: var(--gray);
+    }
+}
+
+.focused {
+    .wrapper {
+        outline: 3px solid var(--accent-ligth);
+        border: 1px solid var(--accent-main);
+    }
+}
+
+.input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+
+    &::placeholder {
+        color: var(--gray);
+    }
+}
+
+.label {
+    &.m {
+        margin-bottom: 20px;
+        font: var(--heading-3);
+    }
+
+    &.s {
+        margin-bottom: 8px;
+        font: var(--text-s);
+    }
+}
+
+.error .wrapper {
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+.errorMessage {
+    display: block;
+    margin-top: 8px;
+    font: var(--text-s);
+    color: var(--error);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 9px 15px;
+    }
+
+    .label {
+        &.m {
+            font: var(--heading-3-mobile);
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.FilterTab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 11px 6px;
+    border-radius: 20px;
+    border: 1px solid var(--devider);
+    white-space: nowrap;
+}

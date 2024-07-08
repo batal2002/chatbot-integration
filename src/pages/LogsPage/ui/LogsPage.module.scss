@@ -1,0 +1,62 @@
+.LogsPage {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -24px;
+    flex-grow: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 57%;
+    flex-grow: 1;
+    border: 1px solid var(--devider);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+
+.dialogListWrapper {
+    position: relative;
+    border-right: 1px solid var(--devider);
+}
+
+.dialogList {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .dialogListWrapper {
+        position: relative;
+        border-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .LogsPage {
+        height: calc(100vh - var(--header-height) - var(--bottom-nav-height) - 16px);
+        margin-bottom: -30px;
+        gap: 16px;
+    }
+
+    .wrapper {
+        margin-left: -16px;
+        margin-right: -16px;
+        border: 0;
+    }
+}

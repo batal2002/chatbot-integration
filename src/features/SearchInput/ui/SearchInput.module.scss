@@ -1,0 +1,38 @@
+.SearchInput {
+    position: relative;
+    width: 100%;
+}
+
+.s {
+    max-width: 360px;
+}
+
+.m {
+    max-width: 400px;
+}
+
+.auto {
+    max-width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 11px 20px 11px 48px;
+    border: 1px solid var(--accent-ligth);
+    border-radius: 12px;
+
+    &::placeholder {
+        color: var(--gray);
+    }
+
+    &:focus {
+        outline: 3px solid var(--accent-ligth);
+        border: 1px solid var(--accent-main);
+    }
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    color: var(--gray);
+}

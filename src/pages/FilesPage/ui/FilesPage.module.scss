@@ -1,0 +1,10 @@
+.FilesPage {
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .FilesPage {
+        flex-direction: column-reverse;
+    }
+}

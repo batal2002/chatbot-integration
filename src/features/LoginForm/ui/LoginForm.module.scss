@@ -1,0 +1,47 @@
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    flex-grow: 1;
+    max-width: 390px;
+    width: 100%;
+    margin: 58px auto 29px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    margin: 0 auto;
+    font: var(--heading-1);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font: var(--text-s);
+    font-weight: 500;
+    color: var(--accent-main);
+}
+
+@media (max-width: 768px) {
+    .LoginForm {
+        margin-top: 70px;
+        padding: 0 5px;
+        gap: 70px;
+    }
+
+    .inputs {
+        gap: 16px;
+    }
+}

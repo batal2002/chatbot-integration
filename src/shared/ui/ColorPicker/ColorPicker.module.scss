@@ -1,0 +1,60 @@
+.pickerWrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font: var(--heading-3);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: var(--text-s);
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid var(--accent-ligth);
+}
+
+.popup {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    padding: 16px;
+    transform: translateY(-100%);
+    border-radius: 12px;
+    background-color: var(--white);
+    box-shadow: 0 2px 14px 0 #0000000f;
+}
+
+.pickerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pickerColor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font: var(--text-s);
+}
+
+@media (max-width: 768px) {
+    .label {
+        font: var(--heading-3-mobile);
+    }
+}

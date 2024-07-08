@@ -1,0 +1,18 @@
+.IntegrationsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.button {
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .IntegrationsHeader {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+}

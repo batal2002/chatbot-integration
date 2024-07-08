@@ -1,0 +1,35 @@
+.input {
+    display: none;
+}
+
+.UploadAvatar {
+    position: relative;
+
+    // TODO: UploadAvatar
+    cursor: auto;
+
+    &::after {
+        content: "";
+        position: absolute;
+        transition: var(--transition-main);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        opacity: 0;
+        background: #0c0c0c80 url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy41ODUyIDIuMjkxNUg2LjM3NTE4QzMuODY1MTggMi4yOTE1IDIuMjkxMDIgNC4wNjk4NCAyLjI5MTAyIDYuNTg2NVYxMy4zNzQ4QzIuMjkxMDIgMTUuODkxNSAzLjg1ODUyIDE3LjY2OTggNi4zNzUxOCAxNy42Njk4SDEzLjU4MUMxNi4xMDE4IDE3LjY2OTggMTcuNjY4NSAxNS44OTE1IDE3LjY2ODUgMTMuMzc0OFY2LjU4NjVDMTcuNjcxOCA0LjA2OTg0IDE2LjEwNDMgMi4yOTE1IDEzLjU4NTIgMi4yOTE1WiIgc3Ryb2tlPSIjRkVGRUZFIiBzdHJva2Utd2lkdGg9IjEuMjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguOTE4NDYgNy4zMjA4QzguOTE4NDYgOC4xNzA4IDguMjMwMTMgOC44NTkxNCA3LjM4MDEzIDguODU5MTRDNi41MzA5NiA4Ljg1OTE0IDUuODQxOCA4LjE3MDggNS44NDE4IDcuMzIwOEM1Ljg0MTggNi40NzA4IDYuNTMwOTYgNS43ODI0NyA3LjM4MDEzIDUuNzgyNDdDOC4yMjkzIDUuNzgzMyA4LjkxNzYzIDYuNDcxNjQgOC45MTg0NiA3LjMyMDhaIiBzdHJva2U9IiNGRUZFRkUiIHN0cm9rZS13aWR0aD0iMS4yNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xNy42NzE1IDEyLjQ1OTFDMTYuOTAyNCAxMS42Njc0IDE1LjQyMzIgMTAuMDY4MiAxMy44MTQ5IDEwLjA2ODJDMTIuMjA1NyAxMC4wNjgyIDExLjI3ODIgMTMuNTk1NyA5LjczMDY5IDEzLjU5NTdDOC4xODMxOSAxMy41OTU3IDYuNzc3MzYgMTIuMDAwNyA1LjUzNzM2IDEzLjAyMzJDNC4yOTczNiAxNC4wNDQ5IDMuMTI0MDIgMTYuMTM0MSAzLjEyNDAyIDE2LjEzNDEiIHN0cm9rZT0iI0ZFRkVGRSIgc3Ryb2tlLXdpZHRoPSIxLjI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==") no-repeat center;
+    }
+
+    // TODO: UploadAvatar
+    //@media (hover: hover) {
+    //    &:hover {
+    //        &::after {
+    //            opacity: 1;
+    //        }
+    //    }
+    //}
+}

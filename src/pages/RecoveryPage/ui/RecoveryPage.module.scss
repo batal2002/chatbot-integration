@@ -1,0 +1,33 @@
+.RecoveryPage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 50px;
+}
+
+.span {
+    text-align: center;
+}
+
+.link {
+    color: var(--accent-main);
+}
+
+.wrapper {
+    flex-grow: 1;
+    max-width: 390px;
+    width: 100%;
+    margin: 58px auto 29px;
+}
+
+@media (max-width: 768px) {
+    .RecoveryPage {
+        padding: 11px 11px 30px;
+    }
+
+    .wrapper {
+        margin-top: 70px;
+        padding: 0 5px;
+        gap: 70px;
+    }
+}

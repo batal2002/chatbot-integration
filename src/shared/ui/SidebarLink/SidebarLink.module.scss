@@ -1,0 +1,106 @@
+.wrapper {
+    position: relative;
+}
+
+.SidebarLink {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: var(--transition-main);
+
+    span {
+        opacity: 1;
+        transition: opacity var(--transition-main);
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--accent-ligth-hover);
+        }
+    }
+}
+
+.span {
+    white-space: nowrap;
+}
+
+.active {
+    background-color: var(--accent-ligth);
+    color: var(--accent-main);
+    pointer-events: none;
+}
+
+.tooltip {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    transform: translate(100%, -50%);
+    padding: 6px 10px 8px;
+    font: var(--text-xs);
+    white-space: nowrap;
+    border-radius: 8px;
+    background-color: var(--accent-ligth-hover);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.collapsed {
+    @media (hover: hover) {
+        &:hover + .tooltip {
+            opacity: 1;
+        }
+    }
+
+    .span {
+        opacity: 0;
+    }
+}
+
+.clear {
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 0;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &.active {
+        background-color: transparent;
+    }
+}
+
+.soon {
+    position: relative;
+    pointer-events: none;
+    color: var(--gray);
+}
+
+.soonTag {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: block;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: var(--gray-light);
+    font: var(--text-xs);
+}
+
+@media (max-width: 768px) {
+    .SidebarLink {
+        padding: 12px;
+    }
+}

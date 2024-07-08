@@ -1,0 +1,76 @@
+.RegistrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    flex-grow: 1;
+    max-width: 390px;
+    width: 100%;
+    margin: 18px auto 29px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    margin: 0 auto;
+    font: var(--heading-1);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.passwordRules {
+    display: inline-block;
+    margin-top: 8px;
+    font: var(--text-xs);
+    color: var(--gray);
+
+    &.error {
+        color: var(--error);
+    }
+}
+
+.agree {
+    display: inline-block;
+    margin-top: 8px;
+    font: var(--text-xs);
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.successWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+    max-width: 390px;
+    width: 100%;
+    margin: 58px auto 0;
+    text-align: center;
+}
+
+.linkToLogin {
+    font: var(--text-s);
+    color: var(--accent-main);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .RegistrationForm {
+        margin-top: 20px;
+        padding: 0 5px;
+        gap: 40px;
+    }
+
+    .title {
+        font: var(--heading-2);
+    }
+}

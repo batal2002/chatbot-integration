@@ -1,0 +1,13 @@
+.SendMessageForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .SendMessageForm {
+        padding: 0 16px;
+    }
+}

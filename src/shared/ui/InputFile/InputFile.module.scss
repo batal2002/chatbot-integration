@@ -1,0 +1,50 @@
+.input {
+    display: none;
+}
+
+.customInput {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding: 11px 20px;
+    font: var(--text-s);
+    font-weight: 500;
+    border: 1px solid var(--accent-ligth);
+    border-radius: 12px;
+}
+
+.label {
+    margin-bottom: 16px;
+    font: var(--heading-3);
+}
+
+.placeholder {
+    color: var(--accent-main);
+    flex: 0 0 auto;
+}
+
+.filenameWrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    flex-grow: 0;
+}
+
+.filename {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--gray);
+}
+
+.error .customInput {
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+@media (max-width: 768px) {
+    .label {
+        font: var(--heading-3-mobile);
+    }
+}

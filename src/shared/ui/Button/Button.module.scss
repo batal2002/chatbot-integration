@@ -1,0 +1,130 @@
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 12px;
+    transition: var(--transition-main);
+    white-space: nowrap;
+}
+
+.auto {
+    width: 100%;
+}
+
+.fit {
+    width: fit-content;
+}
+
+.clear {
+    font: var(--button-text-s);
+    color: var(--accent-main);
+
+    @media (hover: hover) {
+        color: var(--accent-main-hover);
+    }
+
+    &.s {
+        padding: 8px 13px 9px;
+    }
+}
+
+.fill {
+    &.m {
+        padding: 13px 19px 14px;
+        font: var(--button-text-m);
+    }
+
+    &.s {
+        padding: 8px 13px 9px;
+        font: var(--button-text-s);
+    }
+
+    &.accent {
+        color: var(--white);
+        background-color: var(--accent-main);
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: var(--accent-main-hover);
+            }
+        }
+    }
+
+    &:disabled {
+        background-color: var(--disabled);
+        color: var(--gray);
+        pointer-events: none;
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: var(--disabled);
+            }
+        }
+    }
+}
+
+.outline {
+    &.m {
+        padding: 12px 19px 13px;
+        font: var(--button-text-m);
+    }
+
+    &.s {
+        padding: 7px 12px 8px;
+        font: var(--button-text-s);
+    }
+
+    background: var(--white);
+
+    &.accent {
+        color: var(--accent-main);
+        border: 1px solid var(--accent-main);
+
+        @media (hover: hover) {
+            &:hover {
+                color: var(--accent-main-hover);
+                border: 1px solid var(--accent-main-hover);
+            }
+        }
+    }
+
+    &.dark {
+        color: var(--dark);
+        border: 1px solid var(--dark);
+
+        @media (hover: hover) {
+            &:hover {
+                color: var(--dark);
+                border: 1px solid var(--dark);
+            }
+        }
+    }
+
+    &.red {
+        color: var(--error);
+        border: 1px solid var(--error);
+
+        @media (hover: hover) {
+            &:hover {
+                color: var(--error-hover);
+                border: 1px solid var(--error-hover);
+            }
+        }
+    }
+
+    &:disabled {
+        border: 1px solid var(--disabled) !important;
+        color: var(--disabled) !important;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .outline {
+        &.m {
+            padding: 7px  12px 8px;
+            font: var(--text-mobile);
+        }
+    }
+}

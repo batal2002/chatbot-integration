@@ -1,0 +1,63 @@
+.content {
+    margin-top: 28px;
+}
+
+.member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.selectWrapper {
+    max-width: 200px;
+}
+
+.MemberInfo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.name {
+    display: inline-block;
+    font: var(--heading-3);
+    margin-bottom: 6px;
+}
+
+.email {
+    color: var(--gray);
+    font: var(--text-s);
+}
+
+@media (max-width: 768px) {
+    .member {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .name {
+        font: var(--heading-3-mobile);
+    }
+
+    .email {
+        font: var(--text-s-mobile);
+    }
+}

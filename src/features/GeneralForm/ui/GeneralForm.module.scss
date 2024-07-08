@@ -1,0 +1,57 @@
+.ModelForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.copyLabel {
+    display: block;
+    margin-bottom: 16px;
+    font: var(--heading-3);
+}
+
+.buttonLabel {
+    display: block;
+    margin-bottom: 20px;
+    font: var(--heading-3);
+}
+
+.button {
+    margin-left: auto;
+}
+
+.info {
+    display: block;
+    margin-top: 12px;
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttonIcon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .copyLabel {
+        font: var(--heading-3-mobile);
+    }
+
+    .buttonLabel {
+        font: var(--heading-3-mobile);
+    }
+}

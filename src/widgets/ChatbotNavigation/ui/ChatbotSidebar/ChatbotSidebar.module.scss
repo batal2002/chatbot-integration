@@ -1,0 +1,96 @@
+.ChatbotSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 280px;
+    height: 100%;
+    margin-top: auto;
+    padding: 21px 16px 16px;
+    background-color: var(--white);
+    transform: translateX(-100%);
+    transition: transform var(--transition-main);
+    overflow: auto;
+}
+
+.isOpen {
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 1000;
+
+    .sidebar {
+        transform: translateX(0);
+    }
+}
+
+.isClosing {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+}
+
+.name {
+    font: var(--heading-3);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    padding: 12px;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        color: var(--dark);
+    }
+
+    &:disabled {
+        color: var(--gray);
+
+        svg {
+            color: var(--gray);
+        }
+    }
+}
+
+.arrow {
+    margin-left: auto;
+    transition: var(--transition-main);
+}
+
+.dropdown {
+    transition: max-height var(--transition-main);
+    margin-left: 28px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.open {
+    .arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown {
+        height: auto;
+        max-height: 132px;
+    }
+}
+
+.logo {
+    margin-top: auto;
+}

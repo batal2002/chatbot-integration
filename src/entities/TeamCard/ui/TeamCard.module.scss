@@ -1,0 +1,100 @@
+.TeamCard {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 24px;
+    border: 1px solid var(--devider);
+    border-radius: 12px;
+
+    &:not(:last-of-type) {
+        margin-bottom: 24px;
+    }
+}
+
+.email {
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.role {
+    padding: 6px 12px;
+    font: var(--text-s);
+    color: var(--gray);
+    background-color: var(--gray-light);
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.MemberInfo {
+    display: flex;
+    gap: 16px;
+}
+
+.name {
+    display: inline-block;
+    font: var(--heading-3);
+    margin-bottom: 6px;
+}
+
+@media (max-width: 1024px) {
+    .role {
+        padding: 5px 10px;
+        font: var(--text-xs-mobile);
+    }
+
+    .name {
+        font: var(--heading-3-mobile);
+    }
+
+    .email {
+        font: var(--text-mobile);
+    }
+}
+
+@media (max-width: 768px) {
+    .TeamCard {
+        gap: 12px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 12px;
+        }
+    }
+
+    .label {
+        font: var(--heading-3-mobile);
+        margin-bottom: 16px;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .MemberInfo {
+        gap: 12px;
+        align-items: center;
+    }
+
+    .name {
+        margin-bottom: 3px;
+    }
+
+    .email {
+        font: var(--text-s-mobile);
+    }
+}

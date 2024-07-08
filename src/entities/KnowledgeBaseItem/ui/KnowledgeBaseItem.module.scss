@@ -1,0 +1,43 @@
+.KnowledgeBaseItem {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    min-height: 36px;
+}
+
+.filename {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.count {
+    font: var(--text-s);
+    color: var(--gray);
+    white-space: nowrap;
+}
+
+.tag {
+    display: block;
+    flex-shrink: 0;
+    width: 80px;
+    text-align: center;
+    padding: 5px 0;
+    font: var(--text-xs);
+    white-space: nowrap;
+    border-radius: 17px;
+
+    &.active {
+        background-color: var(--green-light);
+        color: var(--green);
+    }
+
+    &.inProgress {
+        background-color: var(--warning-light);
+        color: var(--warning);
+    }
+}
+
+.button {
+    margin-left: auto;
+}

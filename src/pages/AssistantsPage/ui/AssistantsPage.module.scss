@@ -1,0 +1,21 @@
+.templates {
+    margin-top: 48px;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: var(--accent-main);
+    color: var(--white);
+    border-radius: 12px;
+}
+
+.addIcon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+    flex-grow: 1;
+}

@@ -1,0 +1,58 @@
+.emailWrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.copyWrapper {
+    display: flex;
+    gap: 8px;
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.selectWrapper {
+    max-width: 200px;
+}
+
+.info {
+    display: inline-block;
+    margin-bottom: 32px;
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+.title {
+    margin-bottom: 14px;
+    font: var(--heading-3);
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .emailWrapper {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-bottom: 28px;
+        font: var(--text-s-mobile);
+    }
+
+    .title {
+        margin-bottom: 12px;
+        font: var(--heading-3-mobile);
+    }
+
+    .copyWrapper {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+}

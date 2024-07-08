@@ -1,0 +1,60 @@
+:root {
+    // FONTS
+    --font-family-main: "Mulish", sans-serif;
+    --text-line: 20px;
+    --text: 16px / var(--text-line) var(--font-family-main);
+    --text-s: 14px/18px var(--font-family-main);
+    --text-xs: 10px/13px var(--font-family-main);
+    --button-text-m: 500 16px/20px var(--font-family-main);
+    --button-text-s: 500 14px/18px var(--font-family-main);
+    --text-mobile: 14px / 17px var(--font-family-main);
+    --text-s-mobile: 12px/15px var(--font-family-main);
+    --text-xs-mobile: 10px/13px var(--font-family-main);
+
+    // HEADINGS
+    --heading-3: 600 18px/19px var(--font-family-main);
+    --heading-2: 600 22px/22px var(--font-family-main);
+    --heading-1: 700 24px/24px var(--font-family-main);
+    --heading-3-mobile: 600 16px/17px var(--font-family-main);
+
+    // SIZES
+    --header-height: 80px;
+    --sidebar-width: 220px;
+    --sidebar-width-collapsed: 88px;
+
+    // TRANSITION
+    --transition-main: 0.2s;
+
+    // COLORS
+    --white: #fefefe;
+    --error: #cf1b1b;
+    --error-light: #ffe4e4;
+    --error-hover: #c21b1b;
+    --warning: #eea02c;
+    --warning-light: #fff2df;
+    --dark: #0c0b0e;
+    --gray: #88878a;
+    --gray-dark: #201f22;
+    --gray-dark-hover: #3e3d40;
+    --gray-light: #f1f1f1;
+    --accent-main: #494bd9;
+    --accent-main-hover: #292bb9;
+    --accent-ligth: #ebebfb;
+    --accent-ligth-hover: #f6f6fe;
+    --devider: #dddded;
+    --accent-plug: #d8dbe4;
+    --message-bg: #f3f5fa;
+    --message-bg-dark: #1e202d;
+    --line-dark: #2a2d43;
+    --green: #099f06;
+    --green-light: #ecfbee;
+    --disabled: #d6d6d6;
+    --icon-disabled: #bab9bc;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 60px;
+        --bottom-nav-height: 53px;
+    }
+}

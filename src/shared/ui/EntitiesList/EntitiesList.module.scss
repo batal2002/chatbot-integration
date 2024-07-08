@@ -1,0 +1,30 @@
+.EntitiesList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.title {
+    margin-bottom: 23px;
+    font: var(--heading-3);
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .EntitiesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .EntitiesList {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .EntitiesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

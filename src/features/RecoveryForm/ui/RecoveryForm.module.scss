@@ -1,0 +1,42 @@
+.RecoveryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    margin: 0 auto;
+    font: var(--heading-1);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font: var(--text-s);
+    font-weight: 500;
+    color: var(--accent-main);
+}
+
+.successWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+    max-width: 390px;
+    width: 100%;
+    margin: 58px auto 0;
+    text-align: center;
+}
+
+.linkToLogin {
+    font: var(--text-s);
+    color: var(--accent-main);
+    text-decoration: none;
+}

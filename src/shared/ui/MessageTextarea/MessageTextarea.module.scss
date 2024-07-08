@@ -1,0 +1,41 @@
+.Textarea {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.textarea {
+    width: 100%;
+    padding: 24px 0;
+    scroll-padding: 24px;
+    border: 0;
+    max-height: calc(var(--text-line) * 5 + 24px);
+    resize: none;
+    background-color: transparent;
+    color: inherit;
+
+    &::placeholder {
+        color: var(--gray);
+    }
+
+    &:focus {
+        outline: 0;
+        border: 0;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.error .textarea {
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+@media (max-width: 768px) {
+    .textarea {
+        padding: 18px 0;
+        scroll-padding: 18px;
+    }
+}

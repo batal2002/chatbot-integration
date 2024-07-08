@@ -1,0 +1,16 @@
+.title {
+    margin-bottom: 20px;
+    font: var(--heading-3);
+}
+
+.KeyList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font: var(--heading-3-mobile);
+    }
+}

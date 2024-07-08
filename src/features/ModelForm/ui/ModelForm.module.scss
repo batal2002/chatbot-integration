@@ -1,0 +1,22 @@
+.ModelForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.button {
+    margin-left: auto;
+}
+
+.info {
+    display: block;
+    margin-top: 12px;
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .info {
+        font: var(--text-xs-mobile);
+    }
+}

@@ -1,0 +1,21 @@
+.WebsitesForm {
+    flex-grow: 1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form {
+        gap: 16px;
+    }
+}

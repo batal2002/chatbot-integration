@@ -1,0 +1,10 @@
+.title {
+    margin-bottom: 16px;
+    font: var(--heading-3);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}

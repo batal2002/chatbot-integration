@@ -1,0 +1,118 @@
+.IconButton {
+    border-radius: 12px;
+    transition: var(--transition-main);
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.s {
+    padding: 5px;
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.m {
+    padding: 8px;
+}
+
+.l {
+    padding: 10px;
+}
+
+.outline {
+    outline: 1px solid var(--accent-ligth);
+}
+
+.icon- {
+    &dark {
+        svg {
+            color: var(--dark);
+        }
+    }
+
+    &gray {
+        svg {
+            color: var(--gray);
+        }
+    }
+
+    &light {
+        svg {
+            color: var(--white);
+        }
+    }
+}
+
+.light {
+    color: var(--gray);
+    background-color: var(--white);
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--accent-ligth);
+        }
+    }
+}
+
+.accent {
+    color: var(--white);
+    background-color: var(--accent-main);
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--accent-main-hover);
+        }
+    }
+}
+
+.dark {
+    color: var(--white);
+    background-color: var(--gray-dark);
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--gray-dark-hover);
+        }
+    }
+}
+
+.clear {
+    background-color: transparent;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    &.s {
+        padding: 5px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    &.m {
+        padding: 8px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    &.l {
+        padding: 10px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+}

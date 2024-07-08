@@ -1,0 +1,43 @@
+.CopyText {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.fit {
+    width: fit-content;
+}
+
+.auto {
+    width: 100%;
+}
+
+.outline {
+    .text {
+        width: 100%;
+        padding: 11px 20px;
+        border: 1px solid var(--devider);
+        border-radius: 12px;
+    }
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    white-space: nowrap;
+    transform: translateY(-100%);
+    padding: 8px 12px 9px;
+    color: var(--white);
+    font: var(--text-s);
+    border-radius: 8px;
+    background-color: var(--gray-dark);
+    box-shadow: 0 19px 11px 0 rgb(0 0 0 / 4%);
+}
+
+.button {
+    flex-shrink: 0;
+}

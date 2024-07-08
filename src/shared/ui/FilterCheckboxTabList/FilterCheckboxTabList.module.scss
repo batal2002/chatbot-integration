@@ -1,0 +1,23 @@
+.label {
+    font: var(--heading-3-mobile);
+    margin-bottom: 16px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 5px 11px 6px;
+    white-space: nowrap;
+    border-radius: 20px;
+    border: 1px solid var(--devider);
+}
+
+.active {
+    background-color: var(--accent-main);
+    border: 1px solid var(--accent-main);
+    color: var(--white);
+}

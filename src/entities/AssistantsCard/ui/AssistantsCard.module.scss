@@ -1,0 +1,50 @@
+.AssistantsCard {
+    outline: 1px solid var(--devider);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: var(--accent-plug);
+}
+
+.icon {
+    width: 58px;
+    height: 66px;
+    color: #a5acc4;
+}
+
+.footer {
+    padding: 16px 16px 20px;
+}
+
+.name {
+    margin-bottom: 8px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .background {
+        height: 120px;
+    }
+
+    .icon {
+        width: 39px;
+        height: 44px;
+    }
+
+    .name {
+        margin-bottom: 0;
+    }
+}

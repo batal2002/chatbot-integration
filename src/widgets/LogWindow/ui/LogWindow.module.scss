@@ -1,0 +1,36 @@
+.LogWindow {
+    position: relative;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.window {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 100%;
+    padding: 32px 24px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.confidence {
+    display: block;
+    margin-top: 4px;
+    font: var(--text-xs);
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .window {
+        padding: 30px 16px;
+    }
+}

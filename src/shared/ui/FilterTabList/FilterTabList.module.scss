@@ -1,0 +1,18 @@
+.FilterTabList {
+    position: relative;
+    overflow-x: auto;
+    height: 31px;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    gap: 8px;
+}

@@ -1,0 +1,44 @@
+.InboxItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+
+    &.active {
+        pointer-events: none;
+        background-color: var(--accent-ligth);
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--accent-ligth-hover);
+        }
+    }
+}
+
+.name {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 4px;
+}
+
+.title {
+    color: var(--gray);
+}
+
+.date {
+    font: var(--text-s);
+    color: var(--gray);
+    white-space: nowrap;
+}
+
+.message {
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .InboxItem {
+        padding: 16px 0;
+    }
+}

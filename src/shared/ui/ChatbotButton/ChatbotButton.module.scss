@@ -1,0 +1,41 @@
+.ChatbotButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-main);
+    border-radius: 50%;
+    transition: opacity var(--transition-main);
+    overflow: hidden;
+
+    @media (hover: hover) {
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.right {
+    margin-left: auto;
+}
+
+.icon {
+    width: 30px;
+    height: 34px;
+
+    &.light {
+        color: var(--white);
+    }
+
+    &.dark {
+        color: var(--dark);
+    }
+}
+
+.image {
+    max-width: 34px;
+    max-height: 34px;
+    width: 100%;
+    object-fit: cover;
+}

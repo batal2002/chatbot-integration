@@ -1,0 +1,60 @@
+.input {
+    display: none;
+}
+
+.normal {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @media (hover: hover) {
+            &:hover .checkbox {
+                border-color: var(--accent-main-hover);
+            }
+        }
+    }
+
+    .checkbox {
+        flex: 0 0 auto;
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        border: 1px solid var(--accent-main);
+    }
+
+    &.checked {
+        .checkbox {
+            background: var(--accent-main) url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMS4wMzMyIDMuMDAwMjFMMy4wMTE1NCA0Ljk3NzcxTDYuOTY2NTQgMS4wMjI3MSIgc3Ryb2tlPSIjRkVGRUZFIiBzdHJva2Utd2lkdGg9IjEuMjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K") no-repeat center;
+        }
+
+        @media (hover: hover) {
+            &:hover .checkbox {
+                background-color: var(--accent-main-hover);
+            }
+        }
+    }
+
+    .label {
+        font: var(--text-s);
+    }
+}
+
+.tab {
+    .label {
+        display: block;
+        padding: 5px 11px 6px;
+        white-space: nowrap;
+        border-radius: 20px;
+        border: 1px solid var(--devider);
+        background-color: var(--white);
+    }
+
+    &.checked {
+        .label {
+            background-color: var(--accent-main);
+            color: var(--white);
+            border: 1px solid var(--accent-main);
+        }
+    }
+}

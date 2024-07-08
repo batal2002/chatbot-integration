@@ -1,0 +1,58 @@
+.InboxPage {
+    display: grid;
+    grid-template-columns: 1fr 57%;
+    flex-grow: 1;
+    height: 100%;
+    margin: -24px -22px -24px -32px;
+    outline: 1px solid var(--devider);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 1px solid var(--devider);
+}
+
+.dialogListWrapper {
+    position: relative;
+    height: 100%;
+}
+
+.dialogList {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .InboxPage {
+        grid-template-columns: 1fr;
+        outline: 0;
+    }
+
+    .wrapper {
+        border-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .InboxPage {
+        height: calc(100vh - var(--header-height) - var(--bottom-nav-height) - 16px);
+        margin: 0;
+        grid-template-columns: 1fr;
+        outline: 0;
+    }
+
+    .wrapper {
+        gap: 16px;
+    }
+}

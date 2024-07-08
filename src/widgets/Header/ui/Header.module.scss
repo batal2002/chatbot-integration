@@ -1,0 +1,47 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    width: 100%;
+    padding: 0 32px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--devider);
+    transition: width var(--transition-main);
+}
+
+.title {
+    font: var(--heading-2);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .actions {
+        gap: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .Header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0 16px;
+        border-bottom: none;
+    }
+
+    .actions {
+        gap: 4px;
+    }
+}

@@ -1,0 +1,58 @@
+.Message {
+    position: relative;
+    width: fit-content;
+    border-radius: 12px 12px 12px 0;
+    background-color: var(--message-bg);
+
+    &.dark-theme {
+        color: var(--white);
+        background-color: var(--message-bg-dark);
+    }
+}
+
+.m {
+    padding: 15px 28px 18px 20px;
+}
+
+.s {
+    padding: 12px 28px 16px 20px;
+}
+
+.date {
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    font: var(--text-xs);
+    color: var(--gray);
+}
+
+.user {
+    color: var(--white);
+    background-color: var(--accent-main);
+    border-radius: 12px 12px 0;
+    align-self: flex-end;
+
+    &.light {
+        color: var(--white);
+
+        .date {
+            color: var(--white);
+        }
+    }
+
+    &.dark {
+        color: var(--dark);
+
+        .date {
+            color: var(--dark);
+        }
+    }
+}
+
+.button {
+    margin-top: 16px;
+}
+
+.message {
+    white-space: pre-wrap;
+}

@@ -1,0 +1,28 @@
+.InboxHeader {
+    padding: 24px 24px 20px;
+}
+
+.swipedWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.selectWrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .InboxHeader {
+        display: grid;
+        grid-template-columns: 1fr 40px;
+        gap: 20px 8px;
+        padding: 0;
+    }
+
+    .filterList {
+        grid-column: 1 / 3;
+    }
+}

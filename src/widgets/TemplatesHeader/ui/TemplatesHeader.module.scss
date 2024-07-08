@@ -1,0 +1,12 @@
+.TemplatesHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .TemplatesHeader {
+        gap: 8px;
+    }
+}

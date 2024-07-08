@@ -1,0 +1,58 @@
+.LogsHeader {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.export {
+    margin-left: auto;
+}
+
+.exportLogs {
+    margin-top: 24px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 1256px) {
+    .LogsHeader {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .export {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .LogsHeader {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .LogsHeader {
+        flex-direction: column;
+    }
+
+    .export {
+        width: 163px;
+    }
+
+    .headerWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

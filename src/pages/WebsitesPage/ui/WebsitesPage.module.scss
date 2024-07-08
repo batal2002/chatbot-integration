@@ -1,0 +1,10 @@
+.WebsitesPage {
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .WebsitesPage {
+        flex-direction: column-reverse;
+    }
+}

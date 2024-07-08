@@ -1,0 +1,53 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    padding: 0 24px 20px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--white);
+    transform: translateY(100%);
+    transition: transform var(--transition-main);
+}
+
+.isOpen {
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 1000;
+
+    .popup {
+        transform: translateY(0);
+    }
+}
+
+.isClosing {
+    .popup {
+        transform: translateY(100%);
+    }
+}
+
+.close {
+    display: block;
+    width: 100%;
+    padding: 6px 0 18px;
+}
+
+.closeHandler {
+    margin: 0 auto;
+    width: 41px;
+    height: 4px;
+    background-color: var(--devider);
+    border-radius: 4px;
+}

@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.label {
+    font: var(--text-s);
+    margin-bottom: 8px;
+}
+
+.description {
+    display: block;
+    margin-top: 8px;
+    font: var(--text-s);
+    color: var(--gray);
+}
+
+.error {
+    color: var(--error);
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconWrapper {
+    padding: 7px 8px 9px;
+    border-radius: 15px;
+    background-color: var(--accent-ligth);
+}
+
+.alertIcon {
+    color: var(--accent-main);
+    width: 44px;
+    height: 44px;
+}
+
+.alertMessage {
+    font: var(--text-s);
+}
+
+@media (max-width: 768px) {
+    .alertMessage {
+        font: var(--text-s-mobile);
+    }
+}
